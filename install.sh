@@ -64,5 +64,13 @@ else
     echo "SKIP custom zshrc ($HOMEDIR/.zshrc.mine already present)"
 fi
 
+# Xresources install
+if [[ ! -e "$HOMEDIR/.Xresources" ]] && [[ ! -L "$HOMEDIR/.Xresources" ]]; then
+    echo "INSTALL Xresources"
+    ln -s "$CURRENTDIR/linux/Xresources" "$HOMEDIR/.Xresources"
+else
+    echo "SKIP Xresources ($HOMEDIR/.Xresources already present)"
+fi
+
 # Done!
 echo "Installation complete!"
