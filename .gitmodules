@@ -2,3 +2,6 @@
 	path = spacemacs
 	url = https://github.com/syl20bnr/spacemacs
 	branch = develop
+[submodule "common/oh-my-zsh"]
+	path = common/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
